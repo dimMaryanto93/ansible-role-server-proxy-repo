@@ -1,0 +1,4 @@
+---
+# defaults file for ansible-role-server-proxy-repo
+proxy_url: http://192.168.88.50:8081/repository
+proxy_repo_name: centos-repository

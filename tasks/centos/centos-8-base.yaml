@@ -1,0 +1,47 @@
+- name: Remove repository CentOS-BaseOS
+  yum_repository:
+    name: BaseOS
+    file: CentOS-Base
+    state: absent
+
+- name: Set proxy repository for BaseOS
+  yum_repository:
+    name: BaseOS
+    description: BaseOS repo list
+    file: CentOS-Base
+    baseurl: "{{ proxy_url }}/{{ proxy_repo_name }}/$contentdir/$releasever/BaseOS/$basearch/os/"
+    gpgcheck: no
+    enabled: yes
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+
+- name: Remove repository CentOS-AppStream
+  yum_repository:
+    name: AppStream
+    file: CentOS-AppStream
+    state: absent
+
+- name: Set proxy repository for BaseOS
+  yum_repository:
+    name: AppStream
+    description: CentOS-AppStream repo list
+    file: CentOS-AppStream
+    baseurl: "{{ proxy_url }}/{{ proxy_repo_name }}/$contentdir/$releasever/AppStream/$basearch/os/"
+    gpgcheck: no
+    enabled: yes
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+
+- name: Remove repository CentOS-Extra
+  yum_repository:
+    name: extras
+    file: CentOS-Extras
+    state: absent
+
+- name: Set proxy repository for BaseOS
+  yum_repository:
+    name: extras
+    description: CentOS-Extras repo list
+    file: CentOS-Extras
+    baseurl: "{{ proxy_url }}/{{ proxy_repo_name }}/$contentdir/$releasever/extras/$basearch/os/"
+    gpgcheck: no
+    enabled: yes
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
