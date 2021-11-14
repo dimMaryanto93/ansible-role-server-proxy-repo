@@ -1,0 +1,9 @@
+base: 
+  enabled: true
+  name: ubuntu-repository
+gitlab:
+  enabled: false
+  name: ubuntu-gitlab-ce
+docker:
+  enabled: false
+  name: ubuntu-docker-ce

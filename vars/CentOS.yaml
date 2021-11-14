@@ -1,0 +1,15 @@
+base: 
+  enabled: true
+  name: centos-repository
+epel: 
+  enabled: false
+  name: epel-centos
+gitlab:
+  enabled: false
+  name: centos-gitlab-ce
+docker:
+  enabled: false
+  name: centos-docker-ce
+plex:
+  enabled: false
+  name: plexmedia-centos

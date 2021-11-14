@@ -1,5 +1,7 @@
 ---
 - hosts: localhost
   become: true
+  vars:
+    proxy_url: http://192.168.88.50:8081/repository
   roles:
     - ../../ansible-role-server-proxy-repo
