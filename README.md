@@ -54,8 +54,10 @@ Including an example of how to use your role (for instance, with variables passe
 ```ansible
 - hosts: servers
   become: true
+  vars:
+    proxy_url: "<your-proxy-nexus-oss-url>" # example http://localhost:8081/repository
   roles:
-      - { role: dimmaryanto93.proxy-repo }
+      - { role: dimmaryanto93.proxy_repo }
 ```
 
 License
