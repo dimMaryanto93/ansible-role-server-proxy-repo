@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: proxy-repo
+  role_name: proxy_repo
   author: dimmaryanto93
   description: Install gitlab for Linux
   company: PT. Tabeldata Informatika
