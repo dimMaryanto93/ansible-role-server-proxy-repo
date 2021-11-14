@@ -2,4 +2,4 @@
 - hosts: localhost
   become: true
   roles:
-    - dimmaryanto93.proxy-repo
+    - ../../ansible-role-server-proxy-repo
