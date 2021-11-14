@@ -1,7 +1,7 @@
 galaxy_info:
   role_name: proxy_repo
   author: dimmaryanto93
-  description: Install gitlab for Linux
+  description: Setup proxy url on repository for linux distributions
   company: PT. Tabeldata Informatika
 
   license: license (GPL-2.0-or-later, MIT, etc)
